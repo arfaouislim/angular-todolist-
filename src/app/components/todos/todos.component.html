@@ -1,7 +1,3 @@
-<div class="todosList">
-  <p> Todos List works!</p>
-  <app-todo [id]="1"></app-todo>
-  <app-todo [id]="2"></app-todo>
-  <app-todo [id]="3"></app-todo>
-  <app-todo [id]="4"></app-todo>
+<div class="todosList" *ngFor=" let todo of todos ">
+  <app-todo [todo]="todo"></app-todo>
 </div>
