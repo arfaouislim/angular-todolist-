@@ -1,5 +1,37 @@
 header{
   display: flex;
+  flex-direction: column;
+  width: 100%;
 
+  h1{
+    color: rgb(244, 141, 141);
+    width: 100%;
+    text-align: center;
+  }
 
+  .new-todo{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    background: rgba(0, 0, 0, 0.003);
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+    border: 1px solid #ccc;
+    padding: 0px 20px;
+
+    input[type="text"]{
+      height:60px;
+      font-size: 30px;
+      outline: none;
+      border: none;
+      font-style: italic;
+      color: rgb(177, 177, 177);
+      padding: 10px 30px;
+      width: 100%;
+    }
+  }
+
+  input[type="text"]::placeholder{
+    color: rgb(177, 177, 177);
+  }
 }
