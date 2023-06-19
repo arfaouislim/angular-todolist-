@@ -1,0 +1,44 @@
+.todo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  height: 80px;
+  padding:  0 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+
+  .title {
+    font-weight: 500;
+    margin: 0 30px;;
+  }
+
+  .delete {
+      // display: none;
+      position: absolute;
+      color: rgb(177, 177, 177);
+      right: 20px;
+      font-size: 25px;
+      opacity: 0;
+      cursor: pointer;
+      &:hover {
+        color: #b02a2a;
+      }
+
+  }
+
+
+  &:hover{
+    background-color: #f7f6f6;
+    .delete {
+      display: block;
+      opacity: 1;
+      transition: opacity .3s ease-out;
+
+  }
+  }
+
+
+}

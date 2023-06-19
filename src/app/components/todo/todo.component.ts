@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TodoI } from 'src/app/interfaces/todo';
 
 @Component({
   selector: 'app-todo',
@@ -6,6 +7,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./todo.component.scss']
 })
 export class TodoComponent {
-  @Input() id!:number;
+  @Input() todo!: TodoI;
+
+  onDeleteTodo (){
+    console.log(">>>>>> deleted")
+  }
 
 }

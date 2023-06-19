@@ -1,1 +1,5 @@
-<div>todo {{ id }}</div>
+<div class="todo"  >
+  <input type="checkbox" [checked]="todo.status"/>
+  <h6 class="title">{{todo.title}}</h6>
+  <i  class="material-icons delete" (click)="onDeleteTodo()">close</i>
+</div>
