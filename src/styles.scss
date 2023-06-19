@@ -1,6 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 html,
 body {
     height: 100%;
-    margin:0
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #efefef;
 }
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size: 45px;
+}
+
+h3{
+  font-size: 40px;
+}
+
+h4{
+  font-size: 35px;
+}
+
+h5{
+  font-size: 30px;
+}
+
+h6{
+  font-size: 25px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
